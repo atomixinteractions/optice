@@ -1,0 +1,39 @@
+{
+  "name": "optice",
+  "version": "0.1.0",
+  "description": "Select and update your store with lenses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomixinteractions/optice.git"
+  },
+  "keywords": [
+    "store",
+    "redux",
+    "react",
+    "lens",
+    "ramda",
+    "function",
+    "traverse",
+    "reduce",
+    "update",
+    "state",
+    "compose",
+    "prop",
+    "initial",
+    "set",
+    "read"
+  ],
+  "contributors": [
+    "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com/)",
+    "Viacheslav Bereza <mail@betula.co> (http://betula.co/)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomixinteractions/optice/issues"
+  },
+  "homepage": "https://github.com/atomixinteractions/optice#readme"
+}
