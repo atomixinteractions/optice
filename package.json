@@ -1,6 +1,6 @@
 {
   "name": "optice",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Select and update your store with lenses",
   "main": "index.js",
   "scripts": {
