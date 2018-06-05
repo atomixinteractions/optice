@@ -71,7 +71,7 @@ Create new store object.
 store.execute(command: Function, ...args: any[]): result
 ```
 
-Run command function with store methods `({ getState, setState, updateState, readState, execute })` and passed arguments.
+Run command function with store methods `({ updateState, readState, execute })` and passed arguments.
 Immediatly return result of command.
 
 ```js
