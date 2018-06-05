@@ -81,7 +81,11 @@ const createStore = (initialState) => {
   const readState = (lens) =>
     L.view(getState(), lens)
 
-  const execute = (command) => command({ getState, setState, updateState, readState, execute })
+  const execute = (command, ...args) => command(...args)({
+      updateState,
+      readState,
+      execute
+    });
 
   return {
     execute,

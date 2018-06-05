@@ -68,20 +68,20 @@ Create new store object.
 #### `Store.execute`
 
 ```
-store.execute(command): result
+store.execute(command: Function, ...args: any[]): result
 ```
 
-Run command function with store methods `({ getState, setState, updateState, readState, execute })`.
+Run command function with store methods `({ getState, setState, updateState, readState, execute })` and passed arguments.
 Immediatly return result of command.
 
 ```js
-const command = ({ getState, setState, updateState, readState, execute }) => {
+const command = (a, b) => ({ updateState, readState, execute }) => {
   // read, update state
   // or execute another command
-  return 1
+  return 1 + a + b
 }
 
-store.execute(command) === 1
+store.execute(command, 2, 1) === 4
 ```
 
 #### `Store.getState`
