@@ -254,7 +254,7 @@ const fooLens = L.prop('foo')
 const updater = (value) => value + value
 
 const newState = L.over(state, fooLens, updater)
-console.assert(L.read(state, fooLens) === 200)
+console.assert(L.view(state, fooLens) === 200)
 ```
 
 

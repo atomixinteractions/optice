@@ -1,5 +1,4 @@
 
-
 const create = (getter, setter) => ({ getter, setter })
 
 const view = (state, lens) => lens.getter(state)

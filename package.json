@@ -2,8 +2,11 @@
   "name": "optice",
   "version": "0.2.0",
   "description": "Select and update your store with lenses",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src -d lib",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,5 +38,16 @@
   "bugs": {
     "url": "https://github.com/atomixinteractions/optice/issues"
   },
-  "homepage": "https://github.com/atomixinteractions/optice#readme"
+  "files": [
+    "src",
+    "lib"
+  ],
+  "homepage": "https://github.com/atomixinteractions/optice#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "rimraf": "^2.6.2"
+  }
 }
